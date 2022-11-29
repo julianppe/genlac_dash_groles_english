@@ -52,6 +52,7 @@ dropdown = dbc.Row([
             dbc.DropdownMenuItem("Adult population agreeing with the statement “Being a housewife is just as fulfilling as working for pay”", href="/housewife"),
             dbc.DropdownMenuItem("Adult population agreeing with the statement “Women have to work for pay only if their husband does not earn enough”", href="/woman-work-husband"),
             dbc.DropdownMenuItem("Adult population agreeing with the statement “It is better if man works and woman stays at home”", href="/woman-stays-man-work"),
+            dbc.DropdownMenuItem("Percentage of women who think that husbands are justified to beat their wives in some situations", href="/justified-beat"),
         ],
         size="lg",
         nav=True,
