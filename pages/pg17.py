@@ -7,7 +7,7 @@ from dash import dcc, html, register_page, ctx, no_update
 from dash_extensions.enrich import Output, Input, State, callback
 
 dash.register_page(__name__,
-                   path='/wjustified-beat',  # represents the url text
+                   path='/justified-beat',  # represents the url text
                    name='Percentage of women who think that husbands are justified to beat their wives in some situations',  # name of page, commonly used as name of link
                    title='Percentage of women who think that husbands are justified to beat their wives in some situations'  # epresents the title of browser's tab
 )
@@ -40,7 +40,7 @@ layout = html.Div([
             dcc.Dropdown(options=[{'label': x, 'value': x} for x in df.pais.unique()], multi=True, id='page17-pais_elect')
         ], width=6),
         dbc.Col([
-            dcc.Dropdown(options=[{'label': x, 'value': x} for x in list_comparacion_por_ordenada], multi=False, persistence=True, persistence_type='memory', value='Total', id='page17-comparacion_por_elect')
+            dcc.Dropdown(options=[{'label': x, 'value': x} for x in list_comparacion_por_ordenada], multi=False, persistence=True, persistence_type='memory', value='Women', id='page17-comparacion_por_elect')
         ], width=6),
     ]),
         dbc.Row([
